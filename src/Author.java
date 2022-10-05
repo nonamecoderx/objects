@@ -1,21 +1,18 @@
 public class Author {
-    private String name;
-    private String surName;
-    public Author ( String authorName, String authorSurname){
-        this.name = authorName;
-        this.surName = authorSurname;
+    public String nameAuthor;
+    public String surnameAuthor;
+    public Author ( String nameAuthor, String surnameAuthor){
+        this.nameAuthor = nameAuthor;
+        this.surnameAuthor = surnameAuthor;
     }
-    public String getAuthor(){
-        return this.name;
+    public String getNameAuthor(){
+        return this.nameAuthor;
     }
-    public String getSurName(){
-        return this.surName;
+    public String getSurNameAuthor(){
+        return this.surnameAuthor;
     }
-    public void setName (String name) {
-        this.name = name;
-    }
-
-    public void setSurName(String surName) {
-        this.surName = surName;
+    public String toString() {
+        return "Имя автора " + this.nameAuthor + "Фамилия автора " + this.surnameAuthor;
     }
 }
+
