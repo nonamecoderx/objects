@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class Book {
     private String bookName;
-    Author author;
+    private Author author;
     private int bookDate;
 
     public Book(String bookName, Author author, int bookDate) {
@@ -24,7 +24,7 @@ public class Book {
     }
 
     public String toString() {
-        return this.bookName + "by" + this.author + "published in " + this.bookDate;
+        return this.bookName + ", автор " + this.author + ", издана в " + this.bookDate;
     }
 
     @Override
